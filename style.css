@@ -60,6 +60,18 @@ section{
     font-size: 5rem;
 }
 
+.heading-recommended{
+    text-align: center;
+    font-size: 5rem;
+    padding: 1rem;
+    color: rgb(68, 64, 64);
+    margin-bottom: 2rem;
+}
+
+.heading-recommended span{
+    color: #D2042D;
+}
+
 .btn{
     display: inline-block;
     cursor: pointer;
@@ -283,6 +295,57 @@ header .navbar a:hover{
     float: right;
     margin-left: 2rem;
 }
+
+.recommended-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.recommend{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.recommend img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    height: 100%;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(97, 93, 93, 0.6), #666);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.recommend:hover img{
+    transform: scale(1.1);
+}
+.recommend:hover .layer{
+    height: 100%;
+}
+
+
 /* media queries */
 
 @media(max-width:991px){
