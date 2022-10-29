@@ -398,7 +398,56 @@ header .navbar a:hover{
     color: rgb(84, 55, 16);
 }
 
+.order{
+    background-size: cover;
+    background-position: center;
+}
+.order .row{
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .3);
+    margin: 2rem 0;
+    background: white;
+    border-radius: 1rem;
+}
 
+.order .row .image{
+    flex: 1 1 40%;
+}
+.order .row .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.order .row form{
+    flex: 1 1 60%;
+    background: white;
+    padding: 2rem;
+}
+
+.order .row form .box{
+    padding: 1rem;
+    color: #333;
+    text-transform: none;
+    width: 100%;
+    background: #f0f0f0;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.order .row form .box::placeholder{
+    text-transform: capitalize;
+}
+.order .row form .address{
+    resize: none;
+    height: 15rem;
+}
+.order .row form .btn:hover::before{
+    width: 100%;
+    left: 0;
+}
+.order .row form .btn:hover{
+    color: black;
+}
 /* media queries */
 
 @media(max-width:991px){
@@ -442,5 +491,9 @@ header .navbar a:hover{
         border: .2rem solid rgba(0,0,0, .1);
         border-left: .5rem solid #D2042D;
         background: white;
+    }
+
+    .order .row .image{
+        display: none;
     }
 }
