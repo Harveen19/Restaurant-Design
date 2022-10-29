@@ -72,6 +72,30 @@ section{
     color: #D2042D;
 }
 
+.heading-review{
+    text-align: center;
+    font-size: 5rem;
+    padding: 1rem;
+    color: rgb(68, 64, 64);
+    margin-bottom: 2rem;
+}
+
+.heading-review span{
+    color: #D2042D;
+}
+
+.heading-order{
+    text-align: center;
+    font-size: 5rem;
+    padding: 1rem;
+    color: rgb(68, 64, 64);
+    margin-bottom: 2rem;
+}
+
+.heading-order span{
+    color: #D2042D;
+}
+
 .btn{
     display: inline-block;
     cursor: pointer;
@@ -343,6 +367,35 @@ header .navbar a:hover{
 }
 .recommend:hover .layer{
     height: 100%;
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+
+.review .box-container .box{
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    border: 1rem solid black;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .3);
+}
+.review .box-container .box p{
+    font-size: 2rem;
+    color: rgb(77, 39, 77);
+    padding: 2rem 0;
+    line-height: 1.8;
+}
+.review .box-container .box h3{
+    color: black;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: rgb(84, 55, 16);
 }
 
 
