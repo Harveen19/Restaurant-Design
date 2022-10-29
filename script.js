@@ -7,6 +7,6 @@ menu.onclick = () => {
 }
 
 window.onscroll = () => {
-    menu.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
+    menu.classList.remove('fa-xmark');
+    navbar.classList.remove('active');
 }
